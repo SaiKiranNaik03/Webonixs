@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webonixs!</title>
+    <link rel="stylesheet" href="webonixs.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div class="main-div">
+        <div class="form-div">
+            <h1>WEBONIXS</h1>
+            <p>GET INSTANT LAB WORKSHEET! (Exclusive for IARE'N)</p>
+            <form action="#">
+                <input class="in" type="text" placeholder="Enter Roll No." id="rollNo">
+                <input class="in" type="number" min="1" max="8" placeholder="Enter Sem" id="sem">
+                <input class="in" type="text" placeholder="Enter Course Code" id="subCode" style="margin-bottom: 0;">
+                <br><a href="help.html" target="_blank">Get Course Code</a>
+                <!-- <input class="input" type="text" placeholder="Enter Subject Code" id="subCode"> -->
+                <!-- <select id="subject">
+                    <option value="AITC10">WAD</option>
+                    <option value="ACSC21">OOSE</option>
+                </select> -->
+                <input class="in" type="text" placeholder="Week No." id="weekNo">
+                <button id="btnSub" target="#final_doc">Submit</button>
+            </form>
+        </div>
+        
+        <div class="pdf-div">
+            <iframe id="final_doc" src="" title="description"></iframe>     
+        </div>
+
+        <div class="footer"> 
+            <p style="font-size: 18px;">Designed and Developed with &hearts; !</p>
+        </div>
+    </div>
+
+    <script src="webonixs.js"></script>
+</body>
+</html>
