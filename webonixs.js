@@ -11,7 +11,7 @@ let div = document.querySelector(".form-div");
 let div2 = document.querySelector(".pdf-div");
 let act = "";
 form.addEventListener('submit',function(event){
-    // event.preventDefault();
+    event.preventDefault();
 
     let rollno = input1.value;
     // let subject = select.value;
