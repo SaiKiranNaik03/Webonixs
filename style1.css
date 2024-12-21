@@ -151,9 +151,9 @@ p {
         font-size: 30px;
     }
 
-    p {
+    p , a {
         letter-spacing: 0px;
-        font-size: 12px;
+        font-size: 12px ;
     }
 
     #love {

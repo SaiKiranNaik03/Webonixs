@@ -132,7 +132,7 @@ h1 {
 }
 
 p {
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     font-size: 15px;
     margin-bottom: 5px;
     animation: fadeInHeader 1.5s ease-out;
@@ -153,7 +153,7 @@ p {
         font-size: 30px;
     }
 
-    p {
+    p , a{
         letter-spacing: 0px;
         font-size: 12px;
     }
@@ -188,6 +188,7 @@ p {
         width: 35px !important;
         height: 35px !important;
         font-size: 5px !important; 
+        box-shadow: none;
     }
     #theme{
         width:25px;
@@ -259,6 +260,7 @@ p {
     left: 85%;
     background: none;
     z-index: 100;
+    box-shadow: 0 0 6px rgba(211, 211, 211, 0.5);
 }
 
 #theme{
