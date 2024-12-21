@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webonixs!</title>
-    <link rel="stylesheet" href="webonixs.css">
-    <link rel="icon" href="logo.png">
+    <link id="theme-stylesheet" rel="stylesheet" href="style2.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <button id="style-chg"  onclick="changeStylesheet()"><img id="theme" style-chg src="./assets/theme.png" alt=""></button>
     <div class="main-div">
         <div class="form-div">
-            <h1>WEBONIXS</h1>
-            <p>GET INSTANT LAB WORKSHEET! (Exclusive for IARE'N)</p>
+            <h1 class="bounce-in">WEBONIXS</h1>
+            <p class="zoom-in">GET INSTANT LAB WORKSHEET! (Exclusive for IARE'N)</p>
             <form action="#pdf-div">
-                <input class="in" type="text" placeholder="Enter Roll No." id="rollNo">
-                <input class="in" type="number" min="1" max="8" placeholder="Enter Sem" id="sem">
-                <input class="in" type="text" placeholder="Enter Course Code" id="subCode" style="margin-bottom: 0;">
-                <br><a href="help.html" target="_blank">Get Course Code</a>
-                <!-- <input class="input" type="text" placeholder="Enter Subject Code" id="subCode"> -->
-                <!-- <select id="subject">
-                    <option value="AITC10">WAD</option>
-                    <option value="ACSC21">OOSE</option>
-                </select> -->
-                <input class="in" type="text" placeholder="Week No." id="weekNo">
-                <button id="btnSub" target="#final_doc">Submit</button>
+                <input class="in glow-in" type="text" placeholder="Enter Roll No." id="rollNo" required>
+                <input class="in glow-in" type="number" min="1" max="8" placeholder="Enter Sem" id="sem" required>
+                <input class="in glow-in" type="text" placeholder="Enter Course Code" id="subCode" style="margin-bottom: 0;" required>
+                <br><a href="courseCode.html" target="_blank" class="pulse">Get Course Code</a>
+                <input class="in glow-in" type="text" placeholder="Week No." id="weekNo" required>
+                <button id="btnSub" target="#final_doc" class="btn-wobble">Submit</button>
             </form>
         </div>
         
@@ -32,7 +29,7 @@
         </div>
 
         <div class="footer"> 
-            <p id="love" style="font-size: 18px; font-weight: 550;">Designed and Developed with &hearts; !</p>
+            <p id="love" style="font-size: 18px; font-weight: 500;" class="fade-in-up">Designed and Developed with &hearts; !</p>
         </div>
     </div>
 
