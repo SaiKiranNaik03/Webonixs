@@ -13,6 +13,12 @@ document.querySelectorAll('.copy-field').forEach(function(cell) {
         document.execCommand('copy');
 
         document.body.removeChild(tempInput);
+        const alertBox = document.getElementById('alert');
+        alertBox.innerText = `"${cell.innerText}" has been copied to clipboard!`;
+        alertBox.style.display = 'block';
+        setTimeout(() => {
+            alertBox.style.display = 'none';
+        }, 1200);
     });
 });
 
